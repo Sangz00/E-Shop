@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap');
+
+* {
+    list-style-type:none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+    padding: 1rem;
+    text-align: center;
+}
+
+li {  
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+}
+
+.video {
+    background-color: pink;
+    border: 2px black solid;
+    width: 560px;
+    height: 350px;
+    margin-left: 43rem;
+}
+
+body {
+    background-color: gold;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 2rem;
+}
+
+header {
+    background-image: url(../img/planet.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+}
+
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    padding: 4px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+}
+
+.imagenProducto {
+    width: 20rem;
+    padding: 1rem;
+    margin-left: 48rem;
+}
+
+.conteinerProducts {
+    font-family: 'Open Sans', sans-serif;
+    margin: 1rem;
+}
+
+form {
+    width: 10rem;
+    margin-left: 54rem;
+}
+
+.links {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contact {
+    font-family: 'Open Sans', sans-serif;
+}
