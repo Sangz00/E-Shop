@@ -45,7 +45,8 @@ h1 {
 }
 
 body {
-    background-color: gold;
+    background: rgb(255,164,0);
+    background: linear-gradient(90deg, rgba(255,164,0,1) 0%, rgba(255,220,0,1) 35%, rgba(255,164,0,1) 100%);  
 }
 
 footer {
@@ -59,6 +60,7 @@ header {
     background-position: center;
     background-size: cover;
     padding: 1rem;
+    
 }
 
 h2 {
