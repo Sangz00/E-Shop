@@ -29,8 +29,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center; }
-      * body .containerCentered .contact {
-        font-family: 'Open Sans', sans-serif; }
       * body .containerCentered .text {
         font-family: 'Open Sans', sans-serif;
         padding: 1rem;
