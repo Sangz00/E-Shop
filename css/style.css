@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap");
+* {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0; }
+  * body {
+    background: #ffa400;
+    background: linear-gradient(90deg, #ffa400 0%, #ffdc00 35%, #ffa400 100%);
+    margin-top: 5rem; }
+    * body h1 {
+      font-family: 'Work Sans', sans-serif;
+      text-align: center; }
+    * body h2 {
+      font-family: 'Work Sans', sans-serif;
+      padding: 4px;
+      text-align: center; }
+    * body h3 {
+      font-family: 'Work Sans', sans-serif;
+      text-align: center; }
+    * body li {
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      font-weight: bold; }
+    * body .containerCentered {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      * body .containerCentered .contact {
+        font-family: 'Open Sans', sans-serif; }
+      * body .containerCentered .text {
+        font-family: 'Open Sans', sans-serif;
+        padding: 1rem;
+        text-align: center; }
+      * body .containerCentered .video {
+        background-color: pink;
+        border: 2px black solid;
+        width: 560px;
+        height: 340px;
+        margin: 2rem; }
+        * body .containerCentered .video .iframe {
+          width: 556px;
+          height: 282px; }
+    * body .containerProducts {
+      font-family: 'Open Sans', sans-serif;
+      margin: 1rem;
+      column-gap: 5rem; }
+      * body .containerProducts .product {
+        margin-block: 1rem; }
+        * body .containerProducts .product .imagenProducto {
+          width: 20rem;
+          padding: 1rem; }
+    * body form {
+      width: 10rem; }
+  * footer {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 2rem; }
+    * footer .links {
+      text-align: center;
+      font-size: 2rem; }
+
+@media (max-width: 770px) {
+  .containerProducts {
+    display: grid;
+    grid-template-areas: "Header" "Main" "Footer";
+    align-items: center;
+    justify-content: center; }
+  .iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 250px; }
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 250px; } }
+
+@media (min-width: 771px) {
+  .containerProducts {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: center; } }
