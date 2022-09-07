@@ -1,125 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap');
 
+@import "extend.scss";
+
+/* Variables */
+$font:('Work Sans', sans-serif, "Bold", "center");
+
+
+/*SCSS*/
 * {
     list-style-type:none;
     text-decoration: none;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: rgb(255,164,0);
+    background: linear-gradient(90deg, rgba(255,164,0,1) 0%, rgba(255,220,0,1) 35%, rgba(255,164,0,1) 100%);
+    margin-top: 5rem;
     
-    body {
-        background: rgb(255,164,0);
-        background: linear-gradient(90deg, rgba(255,164,0,1) 0%, rgba(255,220,0,1) 35%, rgba(255,164,0,1) 100%);
-        margin-top: 5rem;
-        
-        h1 {
-            font-family: 'Work Sans', sans-serif;
-            text-align: center;
-        }
-
-        h2 {
-            font-family: 'Work Sans', sans-serif;
-            padding: 4px;
-            text-align: center;
-        }
-
-        h3 {
-            font-family: 'Work Sans', sans-serif;
-            text-align: center;
-        }
-
-        li {  
-            text-transform: uppercase;
-            font-family: 'Open Sans', sans-serif;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .containerCentered {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            .text {
-                font-family: 'Open Sans', sans-serif;
-                padding: 1rem;
-                text-align: center;
-            }
-
-            .video {
-                background-color: pink;
-                border: 2px black solid;
-                width: 560px;
-                height: 340px;
-                margin:2rem;
-
-                .iframe {
-                    width: 556px;
-                    height: 282px;
-                }
-            }
-        }
-
-        .containerProducts {
-            font-family: 'Open Sans', sans-serif;
-            margin: 1rem;
-            column-gap: 5rem;
-
-            .product {
-                margin-block: 1rem;
-
-                .imagenProducto {
-                    width: 20rem;
-                    padding: 1rem;
-                }
-            }
-        }
-
-        form {
-            width: 10rem;
-        }  
+    h1 {
+        font-family: $font;
+        text-align: center;
     }
 
-    footer {
+    h2 {
+        font-family: $font;
+        padding: 4px;
         text-align: center;
-        font-family: 'Open Sans', sans-serif;
-        margin-top: 2rem;
+    }
 
-        .links {
-            text-align: center;
-            font-size: 2rem;
-        }
+    h3 {
+        font-family: $font;
+        text-align: center;
+            &:hover{
+                color:white;
+            }
+    }
+    
+    a {  
+        text-transform: uppercase;
+        font-family: $font;
+    }
+}
+
+footer {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 2rem;
+
+    .links {
+        text-align: center;
+        font-size: 2rem;
     }
 }
 
 
+
 @media (max-width:770px) {
-    .containerProducts {
-        display: grid;
-        grid-template-areas: 
-        "Header"
-        "Main"
-        "Footer";
-        align-items: center;
-        justify-content: center;
-    }
-    .iframe {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 350px;
-        height: 250px;
-    }
-    .video {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 350px;
-        height: 250px;
-    }
+.containerProducts {
+    display: grid;
+    grid-template-areas: 
+    "Header"
+    "Main"
+    "Footer";
+    align-items: center;
+    justify-content: center;
+}
+.iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 250px;
+}
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 250px;
+}
 }
 
 @media (min-width:771px) {
