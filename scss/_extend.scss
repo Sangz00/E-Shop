@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap');
+
+/* Variables */
+$font:('Work Sans', sans-serif, "Bold", "center");
+
+
 @mixin size-img {
     width: 20rem;
     padding: 1rem;
@@ -42,8 +49,4 @@
             @include size-img();
         }
     }
-}
-
-form {
-    width: 10rem;
 }  
