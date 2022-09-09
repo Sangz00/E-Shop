@@ -10,6 +10,43 @@ $font:('Work Sans', sans-serif, "Bold", "center");
     padding: 1rem;
 }
 
+@media (max-width:770px) {
+    .containerProducts {
+        display: grid;
+        grid-template-areas: 
+        "Header"
+        "Main"
+        "Footer";
+        align-items: center;
+        justify-content: center;
+    }
+    .iframe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 250px;
+    }
+    .video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media (min-width:771px) {
+    .containerProducts {
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .containerCentered {
     display: flex;
     flex-direction: column;
@@ -49,4 +86,5 @@ $font:('Work Sans', sans-serif, "Bold", "center");
             @include size-img();
         }
     }
-}  
+}
+
